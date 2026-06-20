@@ -12,6 +12,11 @@ class Config:
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
     
     # Upload Configurations
-    UPLOAD_FOLDER = os.path.join(os.path.abspath(os.path.dirname(__file__)), "uploads")
+    UPLOAD_FOLDER = os.path.join(
+        os.path.abspath(os.path.dirname(__file__)),
+        "uploads"
+    )
+
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     MAX_CONTENT_LENGTH = 10 * 1024 * 1024  # 10 MB limit
     ALLOWED_EXTENSIONS = {"pdf", "png", "jpg", "jpeg"}
