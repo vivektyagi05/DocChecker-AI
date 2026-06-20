@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocChecker AI - Smart Legal Risk Auditing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at 50% 50%, #0d0b21 0%, #050409 100%);
+        }
+        .glass-card {
+            background: rgba(13, 11, 33, 0.45);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .g-glow {
+            box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 overflow-x-hidden selection:bg-indigo-500/30">
+    <!-- Header/Navigation -->
+    <header class="w-full fixed top-0 left-0 z-50 bg-slate-950/40 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                    <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-indigo-200 to-purple-200 bg-clip-text text-transparent">DocChecker AI</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="features.html" class="hover:text-slate-200 transition-colors">Features</a>
+                <a href="pricing.html" class="hover:text-slate-200 transition-colors">Pricing</a>
+                <a href="about.html" class="hover:text-slate-200 transition-colors">About</a>
+                <a href="faq.html" class="hover:text-slate-200 transition-colors">FAQ</a>
+                <a href="contact.html" class="hover:text-slate-200 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="auth.html" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Sign In</a>
+                <a href="auth.html" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all duration-300 shadow-md shadow-indigo-950/50">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-36 pb-20 text-center relative">
+        <div class="absolute w-[400px] h-[400px] rounded-full bg-indigo-600/10 blur-[100px] -top-20 left-1/2 -translate-x-1/2 pointer-events-none"></div>
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/40 border border-indigo-500/30 text-indigo-300 text-xs font-semibold mb-8 animate-pulse">
+            Introducing Audit Engine v2.5
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.15] mb-6">
+            Understand legal contracts <span class="bg-gradient-to-r from-indigo-400 via-indigo-200 to-purple-400 bg-clip-text text-transparent">before you sign.</span>
+        </h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed mb-10">
+            A venture-scale contract auditor. Upload PDFs, scans, or images and let DocChecker identify risks, financial obligations, and hidden liability traps in seconds.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-20">
+            <a href="auth.html" class="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-indigo-950/50 flex items-center justify-center gap-2">
+                <span>Start Auditing Free</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+            <a href="#how-it-works" class="w-full sm:w-auto border border-white/10 hover:border-white/20 hover:bg-white/[0.02] text-slate-300 font-medium px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center">
+                See How It Works
+            </a>
+        </div>
+
+        <!-- Trust Indicators / Social Proof -->
+        <div class="border-t border-white/5 pt-12">
+            <p class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6">Trusted by innovators at companies worldwide</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-40">
+                <span class="text-lg font-bold tracking-widest text-slate-400">STRIPE</span>
+                <span class="text-lg font-bold tracking-widest text-slate-400">VERCEL</span>
+                <span class="text-lg font-bold tracking-widest text-slate-400">LINEAR</span>
+                <span class="text-lg font-bold tracking-widest text-slate-400">NOTION</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Three steps to peace of mind</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Get a professional legal risk breakdown in three simple steps.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card rounded-2xl p-8 relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold mb-6 text-lg">1</div>
+                <h3 class="text-lg font-semibold text-white mb-2">Upload Agreement</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Drag and drop PDFs, PNGs, or JPEG scans. Works for employment contracts, leases, NDAs, and more.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-bold mb-6 text-lg">2</div>
+                <h3 class="text-lg font-semibold text-white mb-2">AI Risk Assessment</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Gemini 2.5 Flash analyzes terms, scores risk, maps timelines, and logs financial commitments.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold mb-6 text-lg">3</div>
+                <h3 class="text-lg font-semibold text-white mb-2">Grounded Chat</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Ask specific questions, highlight vague clauses, and review recommended action items.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Social Proof -->
+    <section class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white">What our users say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card rounded-2xl p-8 text-left">
+                <p class="text-slate-300 italic mb-6">"DocChecker AI saved me from a lease agreement automatic 12-month lock-in. A must-have for freelancers and renters."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-400">AM</div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Alex Morgan</h4>
+                        <p class="text-xs text-slate-500">Freelance Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card rounded-2xl p-8 text-left">
+                <p class="text-slate-300 italic mb-6">"Perfect for startup hiring contracts. It flagged a broad inventions assignment clause, enabling us to amend it."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-400">SL</div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Sarah Lim</h4>
+                        <p class="text-xs text-slate-500">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="max-w-5xl mx-auto px-6 py-20 mb-20 text-center glass-card rounded-3xl relative overflow-hidden g-glow">
+        <div class="absolute w-[300px] h-[300px] rounded-full bg-indigo-600/10 blur-[100px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Protect yourself before you sign.</h2>
+        <p class="text-slate-400 max-w-xl mx-auto text-sm md:text-base mb-8">Get immediate risk analysis on any contract starting now.</p>
+        <a href="auth.html" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 inline-block shadow-md">
+            Start Auditing Free
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-12 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p>&copy; 2026 DocChecker AI. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="features.html" class="hover:text-slate-300">Features</a>
+                <a href="pricing.html" class="hover:text-slate-300">Pricing</a>
+                <a href="faq.html" class="hover:text-slate-300">FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
