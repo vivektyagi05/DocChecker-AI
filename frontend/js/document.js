@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const API_BASE = `http://localhost:5000/api/documents/${documentId}`;
+    const API_BASE = `/api/documents/${documentId}`;
     
     // UI Elements
     const docTitle = document.getElementById("doc-title");

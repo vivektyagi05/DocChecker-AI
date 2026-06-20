@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const API_BASE = "http://localhost:5000/api/auth";
+    const API_BASE = "/api/auth";
     const authForm = document.getElementById("auth-form");
     const authTitle = document.getElementById("auth-title");
     const authSubtitle = document.getElementById("auth-subtitle");

@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const API_BASE = "http://localhost:5000/api/documents";
-    const AUTH_BASE = "http://localhost:5000/api/auth";
+    const API_BASE = "/api/documents";
+    const AUTH_BASE = "/api/auth";
 
     // UI Elements
     const userBadge = document.getElementById("user-badge");
