@@ -206,9 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) throw new Error("Could not load chat history.");
 
             const data = await response.json();
+            chatContainer.innerHTML = "";
             (data.history || []).forEach(msg => {
                 appendChatMessage(msg.role, msg.message);
             });
+            
         } catch (error) {
             console.error("Error fetching chat logs:", error);
         }

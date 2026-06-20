@@ -1,50 +1,125 @@
-# Environment
+# =========================
+
+# Environment Variables
+
+# =========================
+
 .env
 .env.*
 *.env
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# =========================
 
-# Virtual Environment
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# =========================
+
+# Virtual Environments
+
+# =========================
+
 venv/
 .venv/
 env/
+ENV/
 
-# Uploads
+# =========================
+
+# User Uploads
+
+# =========================
+
 uploads/
+uploads/**
+
+# =========================
 
 # Logs
+
+# =========================
+
 *.log
+logs/
 
-# VS Code
+# =========================
+
+# IDE
+
+# =========================
+
 .vscode/
-
-# JetBrains
 .idea/
 
-# OS
+# =========================
+
+# OS Files
+
+# =========================
+
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# =========================
 
 # Testing
+
+# =========================
+
 .pytest_cache/
 .coverage
+htmlcov/
+
+# =========================
 
 # Build
-dist/
+
+# =========================
+
 build/
+dist/
+*.egg-info/
+
+# =========================
+
+# Database Dumps
+
+# =========================
+
+dump/
+*.bson
+*.archive
+
+# =========================
 
 # Secrets
+
+# =========================
+
 secrets.json
 credentials.json
 service-account.json
+firebase-adminsdk.json
 
-# Mongo Dumps
-dump/
+# =========================
 
 # Render
+
+# =========================
+
 .render/
+
+# =========================
+
+# Local Database Files
+
+# =========================
+
+*.sqlite3
+*.db

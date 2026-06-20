@@ -49,7 +49,16 @@ class DocumentService:
 
         # Run AI analysis (Runs Gemini API to get executive_summary, risks, etc.)
         try:
-            analysis = GeminiService.analyze_document(file_path, file_ext)
+            if not raw_text:
+                raw_text = f"""
+                Filename: {filename}
+
+                OCR extraction unavailable.
+
+                Analyze this document based on visible content if possible.
+                """
+
+            analysis = GeminiService.analyze_document(raw_text)
             
             # Update record with analysis findings
             db.documents.update_one(

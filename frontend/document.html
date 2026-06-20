@@ -35,9 +35,20 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.2);
         }
+        html,
+            body{
+                height:100%;
+            }
+
+            body{
+                overflow:hidden;
+            }
+            .workspace{
+                height:calc(100vh - 73px);
+            }
     </style>
 </head>
-<body class="min-h-screen text-slate-100 flex flex-col overflow-hidden">
+<body class="min-h-screen text-slate-100 flex flex-col">
     <!-- Header -->
     <header class="w-full px-6 py-4 flex items-center justify-between border-b border-white/5 relative z-10 shrink-0 bg-slate-950/40 backdrop-blur-md">
         <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='dashboard.html'">
@@ -63,10 +74,10 @@
     </header>
 
     <!-- Main Workspace Split Pane -->
-    <div class="grow flex flex-col lg:flex-row relative z-10 overflow-hidden">
+    <div class="workspace flex flex-col lg:flex-row relative z-10 min-h-0">
         
         <!-- Left: Document Audit & Risk Panel -->
-        <div class="w-full lg:w-3/5 p-6 overflow-y-auto custom-scrollbar flex flex-col gap-6">
+        <div class="w-full lg:w-[65%] p-6 overflow-y-auto custom-scrollbar flex flex-col gap-6 min-h-0">
             
             <!-- File Info Bar -->
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-white/5">
@@ -168,7 +179,20 @@
         </div>
 
         <!-- Right: Chat Sidebar -->
-        <div class="w-full lg:w-2/5 border-t lg:border-t-0 lg:border-l border-white/5 bg-slate-950/20 p-6 flex flex-col justify-between shrink-0 relative overflow-hidden">
+        <div class="
+            w-full
+            lg:w-[35%]
+            border-t
+            lg:border-t-0
+            lg:border-l
+            border-white/5
+            bg-slate-950/20
+            p-6
+            flex
+            flex-col
+            min-h-0
+            h-full
+            ">
             
             <!-- Chat Header -->
             <div class="pb-4 border-b border-white/5 shrink-0 flex items-center gap-2">
@@ -177,7 +201,18 @@
             </div>
 
             <!-- Chat Message List -->
-            <div class="grow overflow-y-auto custom-scrollbar my-4 space-y-4 pr-1" id="chat-messages-container">
+            <div
+                    id="chat-messages-container"
+                    class="
+                    flex-1
+                    overflow-y-auto
+                    custom-scrollbar
+                    my-4
+                    space-y-4
+                    pr-2
+                    min-h-0
+                    "
+                    >
                 <!-- Initial welcoming message -->
                 <div class="flex items-start gap-3">
                     <div class="w-7 h-7 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center shrink-0">
