@@ -9,7 +9,7 @@ The system automatically extracts document content, identifies legal and financi
 ---
 
 ## 🚀 Live Demo
-👉 https://ai-generator-k573.onrender.com
+👉 https://docchecker-ai.onrender.com/
 
 
 
